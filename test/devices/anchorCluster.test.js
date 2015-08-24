@@ -1,7 +1,7 @@
 /**
  * Created by chenqiu on 15/8/8.
  */
-var AnchorCluster = require("../../lib/objects/AnchorCluster.js");
+var AnchorCluster = require("../../lib/deviceFactory/AnchorCluster.js");
 
 var anchorCluster = new AnchorCluster;
 
