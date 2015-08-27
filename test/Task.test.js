@@ -15,8 +15,8 @@ task.on('packet', function(packet) {
 });
 
 task.on('anchor_position', function(result) {
-    console.log('Anchor positioning complete:');
-    console.log(result);
+    console.log('Anchor positioning complete.');
+    //console.log(result);
 });
 
 task.on('error', function(err) {
