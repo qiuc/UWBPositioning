@@ -19,6 +19,10 @@ task.on('anchor_position', function(result) {
     //console.log(result);
 });
 
+task.on('tag_position', function(result) {
+    console.log(result);
+});
+
 task.on('error', function(err) {
     console.error(err.code);
 });

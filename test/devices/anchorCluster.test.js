@@ -1,9 +1,9 @@
 /**
  * Created by chenqiu on 15/8/8.
  */
-var AnchorCluster = require("../../lib/deviceFactory/AnchorCluster.js");
+var deviceFactory = require("../../lib/deviceFactory");
 
-var anchorCluster = new AnchorCluster;
+var anchorCluster = deviceFactory.createAnchorCluster({});
 
 anchorCluster.add({id: 1});
 anchorCluster.add({id: 2});
@@ -35,7 +35,7 @@ anchorCluster._nodes['4'].anchor.distances = {
     "3" : 8.324416
 };
 
-anchorCluster.positioning([0,0], false);
+anchorCluster.positioning({});
 
 
 

@@ -7,7 +7,7 @@ var fs      = require('fs');
 var through = require("through2");
 var split   = require('split');
 
-var readStream = fs.createReadStream('./test/packetSender/TOF.txt');
+var readStream = fs.createReadStream(process.argv[2]);
 var oldTick = 0;
 
 readStream.pipe(split())
