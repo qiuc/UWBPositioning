@@ -1,0 +1,29 @@
+{
+  "name": "uwbpositioning",
+  "version": "1.0.0",
+  "description": "Ultra Wide Band Positioning UDP server.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "split": "^1.0.0",
+    "through2": "^2.0.0",
+    "async": "^1.4.2",
+    "mathjs": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/Task.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiuc/tdoa.git"
+  },
+  "author": "Qiu Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiuc/tdoa/issues"
+  },
+  "homepage": "https://github.com/qiuc/tdoa#readme"
+}

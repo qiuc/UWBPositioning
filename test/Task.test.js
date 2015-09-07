@@ -1,10 +1,9 @@
 /**
  * Created by chenqiu on 15/8/24.
  */
-var Task        = require('../lib/Task');
-var TaskConfig  = require('../lib/TaskConfig');
+var UWBPosition        = require('../');
 
-var task = new Task({config: new TaskConfig({})});
+var task = UWBPosition.createTask({});
 
 task.on('listening', function(address) {
     console.log("server listening " + address.address + ":" + address.port);
@@ -16,7 +15,7 @@ task.on('packet', function(packet) {
 
 task.on('anchor_position', function(result) {
     console.log('Anchor positioning complete.');
-    //console.log(result);
+    console.log(result);
 });
 
 task.on('tag_position', function(result) {
@@ -58,5 +57,12 @@ task.run({}, function(anchorCluster) {
         "3" : 8.324416
     });
 
-    anchorCluster.positioning({});
+    anchorCluster.positioning({initPosition: [1,1]});
+
+    task.ping({
+        rinfo: {
+            address: "127.0.0.1",
+            port:    "1234"
+        }
+    });
 });
