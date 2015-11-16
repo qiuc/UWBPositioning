@@ -23,7 +23,7 @@ task.on('tag_position', function(result) {
 });
 
 task.on('error', function(err) {
-    console.error(err.code);
+    console.error(err);
 });
 
 task.run({}, function(anchorCluster) {
@@ -57,7 +57,7 @@ task.run({}, function(anchorCluster) {
         "3" : 8.324416
     });
 
-    anchorCluster.positioning({initPosition: [1,1]});
+    anchorCluster.positioning({initPosition: [0,0]});
 
     task.ping({
         rinfo: {

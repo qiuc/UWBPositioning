@@ -7,10 +7,13 @@
     "test": "test"
   },
   "dependencies": {
-    "split": "^1.0.0",
-    "through2": "^2.0.0",
     "async": "^1.4.2",
-    "mathjs": "^2.1.1"
+    "generic-pool": "^2.2.0",
+    "node-uuid": "*",
+    "mathjs": "^2.1.1",
+    "redis": "^2.2.5",
+    "split": "^1.0.0",
+    "through2": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qiuc/tdoa.git"
+    "url": "git+https://github.com/qiuc/UWBPositioning.git"
   },
   "author": "Qiu Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qiuc/tdoa/issues"
+    "url": "https://github.com/qiuc/UWBPositioning/issues"
   },
-  "homepage": "https://github.com/qiuc/tdoa#readme"
+  "homepage": "https://github.com/qiuc/UWBPositioning.git#readme"
 }
