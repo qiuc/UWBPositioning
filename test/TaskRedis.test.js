@@ -61,7 +61,7 @@ task.on('tag_position', function(result) {
 });
 
 task.on('error', function(err) {
-    console.error(err);
+    console.dir(err);
 });
 
 task.run({}, function() {
