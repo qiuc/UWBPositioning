@@ -4,4 +4,4 @@
 var math = require('../../lib/mathTools/math');
 
 
-console.log(math.distance([1,1], [2,2]));
+console.log(math.bitAnd(math.bignumber('-147567105818'), math.bignumber('1099511627775')));

@@ -13,12 +13,12 @@ var anchorPositions = [
 ];
 
 var tdoaData = [
-    { pollRXTime : '915418234839', timeDelta  : 0 },
-    { pollRXTime : '915418234870', timeDelta  : 0 },
-    { pollRXTime : '915418235275', timeDelta  : 0 },
-    { pollRXTime : '915418235143', timeDelta  : 0 },
-    { pollRXTime : '915418235174', timeDelta  : 0 },
-    { pollRXTime : '915418235307', timeDelta  : 0 }
+    { pollRXTime : '915418234839', timeDelta  : '0' },
+    { pollRXTime : '915418234870', timeDelta  : '0' },
+    { pollRXTime : '915418235275', timeDelta  : '0' },
+    { pollRXTime : '915418235143', timeDelta  : '0' },
+    { pollRXTime : '915418235174', timeDelta  : '0' },
+    { pollRXTime : '915418235307', timeDelta  : '0' }
 ];
 
 tdoa(anchorPositions, tdoaData, 0, function(err, result) {
